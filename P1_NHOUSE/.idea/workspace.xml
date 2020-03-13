@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac575f77-df75-4014-a5a7-41d04d243838" name="Default Changelist" comment="Format, background, almost finished. Small adjustments remaining" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Xd234xRSi4VVRO07zjW3hMfUqo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projects\P1_NHOUSE\img" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac575f77-df75-4014-a5a7-41d04d243838" name="Default Changelist" comment="" />
+      <created>1581361448312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581361448312</updated>
+      <workItem from="1581361457352" duration="1459000" />
+      <workItem from="1581697842705" duration="1335000" />
+      <workItem from="1581704554329" duration="2924000" />
+      <workItem from="1581729542274" duration="867000" />
+      <workItem from="1582060241244" duration="10056000" />
+      <workItem from="1582136490294" duration="2590000" />
+      <workItem from="1582229110566" duration="17528000" />
+      <workItem from="1582301087274" duration="21520000" />
+      <workItem from="1582326837112" duration="4453000" />
+      <workItem from="1582341056120" duration="3707000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1581362250328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581362250328</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Bootstrapping, General Formatting  and Registration Fields">
+      <created>1581726549214</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581726549214</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Bootstrapping, General Formatting  and Registration Fields">
+      <created>1581726821673</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581726821673</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Images Some animations">
+      <created>1582070521423</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582070521423</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Format, background, almost finished. Small adjustments remaining">
+      <created>1582317447940</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582317447940</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Format, background, almost finished. Small adjustments remaining">
+      <created>1582323322990</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582323322990</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Format, background, almost finished. Small adjustments remaining">
+      <created>1582331299765</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582331299765</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Format, background, almost finished. Small adjustments remaining">
+      <created>1582345282262</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582345282262</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Bootstrapping, General Formatting  and Registration Fields" />
+    <MESSAGE value="Images Some animations" />
+    <MESSAGE value="Format, background, almost finished. Small adjustments remaining" />
+    <option name="LAST_COMMIT_MESSAGE" value="Format, background, almost finished. Small adjustments remaining" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="795" y="227" key="#Notifications" timestamp="1581362289170">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="795" y="227" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1581362289170" />
+    <state x="683" y="242" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582320797422">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="683" y="242" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582320797422" />
+    <state x="737" y="286" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582229115852">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="737" y="286" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582229115852" />
+    <state x="978" y="392" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582249783141">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="978" y="392" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582249783141" />
+    <state x="828" y="163" key="CommitChangelistDialog2" timestamp="1582345270737">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="828" y="163" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582323312611" />
+    <state x="828" y="163" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582345270737" />
+    <state x="1298" y="372" key="RollbackChangesDialog" timestamp="1582322691310">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1298" y="372" key="RollbackChangesDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582322691310" />
+    <state x="795" y="302" key="Vcs.Push.Dialog.v2" timestamp="1582345311617">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="795" y="302" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582323326002" />
+    <state x="795" y="302" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1582345311617" />
+    <state x="899" y="393" key="com.intellij.ide.util.TipDialog" timestamp="1582341077434">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="899" y="393" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582301125583" />
+    <state x="899" y="393" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582341077434" />
+    <state x="831" y="483" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582323262443">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="831" y="483" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582323262443" />
+  </component>
+</project>

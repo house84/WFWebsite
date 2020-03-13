@@ -1,0 +1,38 @@
+
+.navbar-navbar-inverse {
+    background-color: #121210;
+    padding: 15px;
+    margin-bottom: 0;
+    height: auto;
+}
+
+.navbar-brand {
+    font: 100% "Tarzan";
+    color: orangered;
+    text-shadow: 2px 2px black;
+}
+
+.row-content {
+    color: whitesmoke;
+    font: 90% "Times New Roman";
+    text-shadow: 2px 2px #222222;
+}
+
+.link {
+    color: orangered;
+    font: 150% "Times New Roman";
+    text-shadow: 2px 2px #222222;
+}
+
+body {
+    background-image: url("../img/morningWFsky.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+footer{
+    background-color: #121210;
+    padding: 15px;
+    height: auto;
+    margin-top: 0;
+}

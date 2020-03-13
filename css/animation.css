@@ -1,0 +1,96 @@
+
+.images img {
+    max-width: 200px;
+    height: auto;
+}
+
+.images:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.images  {
+    opacity: 0.9;
+}
+
+.images:hover {
+    opacity: 1;
+}
+.circle:hover {
+    border-radius: 50%;
+}
+
+#cf img {
+    position: absolute;
+    width: 115px;
+    height: auto;
+    border-radius: 25%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222222);
+    filter: drop-shadow(5px 5px 5px #222222);
+}
+.cf img {
+    position: relative;
+    left:200px;
+    top: 0px;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: .5;}
+    33% {opacity: 1;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: .5;}
+    33% {opacity: 1;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#pic1 {
+    background-color: lightblue;
+}
+#pic1 {
+    -webkit-animation-delay: -1s;
+    background-color: yellow;
+}
+#pic2 {
+    -webkit-animation-delay: 1s;
+    background-color: lightgreen;
+}
+
+#shimmer    {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+
+
