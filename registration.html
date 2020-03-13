@@ -43,13 +43,15 @@
                     <div id="passDiv" class="form-group">
                         <label for="password">Password:</label>
                         <input type="password" id="password" class="form-control"
-                        placeholder="Password"/>
-                        <span id="passErr" class="help-block hide">Please enter a password</span>
+                        placeholder="Password" onclick="registerHandlers();"/>
+                        <span id="passErr" class="help-block hide">Password Must be at minimum 8
+                         characters long and contain at least 1 capital, 1 lowercase
+                            1 number and 1 special character</span>
                     </div>
                     <div id="verPassDiv" class="form-group">
                         <label for="verification">Verify Password:</label>
                         <input type="password" id="verification" class="form-control"
-                        placeholder="Verify Password"/>
+                        placeholder="Verify Password" onclick="registerHandlers();" />
                         <span id="verPassErr" class="help-block hide">Your passwords do not match,
                         please try again.</span>
                     </div>
