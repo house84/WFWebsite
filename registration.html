@@ -5,13 +5,13 @@
     <title>Project 1</title>
     <link href="./css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="./css/animation.css" rel="stylesheet" type="text/css">
-    <script src="./js/home.js"></script>
+    <script src="./js/registration.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width-device-width, initial-scale=1">
 </head>
-<body>
+<body onload="registerHandlers();">
 
 <nav class="navbar-navbar-inverse">
     <div class="container-fluid">
@@ -30,7 +30,7 @@
             <p><a class="link" href="./animations.html">Animations</a></p>
         </div>
         <br><br><br><br><br><br>
-       <form method="post">
+       <form method="post" id="myForm">
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 text-left">
             <br><br>
             <div class ="row">
@@ -40,15 +40,18 @@
                         <input id="username" name="username" class="form-control"
                                type="text" placeholder="Username">
                     </div>
-                    <div class="form-group">
+                    <div id="passDiv" class="form-group">
                         <label for="password">Password:</label>
-                        <input id="password" name="password" class="form-control"
-                               type="password" value="" placeholder="Password"/>
+                        <input type="password" id="password" class="form-control"
+                        placeholder="Password"/>
+                        <span id="passErr" class="help-block hide">Please enter a password</span>
                     </div>
-                    <div class="form-group">
-                        <label for="confirm_password">Password:</label>
-                        <input id="confirm_password" name="confirm_password" class="form-control"
-                               type="password" value="" placeholder="Confirm Password"/>
+                    <div id="verPassDiv" class="form-group">
+                        <label for="verification">Verify Password:</label>
+                        <input type="password" id="verification" class="form-control"
+                        placeholder="Verify Password"/>
+                        <span id="verPassErr" class="help-block hide">Your passwords do not match,
+                        please try again.</span>
                     </div>
                     <div class="form-group">
                         <label for="firstname">First Name:</label>
@@ -181,7 +184,8 @@
                             <input type="date" name="birthday" id="birthday" >
                         </div>
 
-                        <input type="submit" class="btn btn-success" value="Submit Button">
+                        <input type="submit" name="submit" disabled="disabled"
+                               id="submitButton" class="btn btn-success" value="Submit Button">
                         <input type="reset" class="btn btn-info" value="Reset Button">
                     </div>
                 </div>
