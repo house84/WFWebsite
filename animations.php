@@ -22,7 +22,7 @@
             <br>
             <p>This is a cool thing </p>
         </div>
-        <div class="cf" id="cf" >
+        <div class="cf" id="cf">
             <a href="./img/allday.jpg"/>
             <img id="pic1" src="./img/morningsky.jpg"/>
             <img id="pic2" src="./img/morningWFsky.jpg"/>
@@ -33,14 +33,14 @@
     <div class="row-content">
         <br>
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sidenav">
-            <p><a class="link" href="./index.html">Home</a></p>
-            <p><a class="link" href="./registration.html">Registration</a></p>
+            <p><a class="link" href="./index.php">Home</a></p>
+            <p><a class="link" href="./registration.php">Registration</a></p>
             <p><a class="link" href="#">Animations</a></p>
         </div>
         <br><br><br>
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 text-left">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6" >
+                <div class="col-xs-12 col-sm-12 col-md-6">
                     <br><br>
                     <div class="row">
                         <div id="image1" class="images">
@@ -49,28 +49,32 @@
                                      alt="Harvest Moon " class="circle">
                             </a><br>
                             Harvest Moon
-                        </div><br>
+                        </div>
+                        <br>
                         <div id="image3" class="images">
                             <a href="./img/Farm.png" target="new">
                                 <img src="./img/Farm.png"
                                      alt="Sunset at Farm" class="circle">
                             </a><br>
                             Farm Sunset
-                        </div><br>
+                        </div>
+                        <br>
                         <div id="image2" class="images">
                             <a href="./img/smokyskyline.jpg" target="new">
                                 <img src="./img/smokyskyline.jpg"
                                      alt="Great Smoky Mountains" class="circle">
                             </a><br>
                             Smoky Mountains
-                        </div><br>
+                        </div>
+                        <br>
                         <div id="image6" class="images">
                             <a href="./img/tunnel.jpg" target="new">
                                 <img src="./img/tunnel.jpg"
                                      alt="Car Passing Through Tunnel at Night" class="circle">
                             </a><br>
                             Tunnel Streak
-                        </div><br>
+                        </div>
+                        <br>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
@@ -82,14 +86,16 @@
                                      alt="Color Streak" class="circle">
                             </a><br>
                             Timelapse Lights
-                        </div><br>
+                        </div>
+                        <br>
                         <div id="image5" class="images">
                             <a href="./img/Elk.png" target="new">
                                 <img src="./img/Elk.png"
                                      alt="Elk Rubbing Antlers" class="circle">
                             </a><br>
                             Lone Elk
-                        </div><br>
+                        </div>
+                        <br>
 
                         <div id="image8" class="images">
                             <a href="./img/Mearl.jpg" target="new">
@@ -97,14 +103,16 @@
                                      alt="Cat" class="circle">
                             </a><br>
                             Mearl
-                        </div><br>
+                        </div>
+                        <br>
                         <div id="image4" class="images">
                             <a href="./img/obie.jpg" target="new">
                                 <img src="./img/obie.jpg"
                                      alt="Obie Dog" class="circle">
                             </a><br>
                             Obie Dog
-                        </div><br>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>

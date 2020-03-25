@@ -26,14 +26,14 @@
         <br><br><br>
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sidenav">
             <p><a class="link" href="#">Home</a></p>
-            <p><a class="link" href="./registration.html">Registration</a></p>
-            <p><a class="link" href="./animations.html">Animations</a></p>
+            <p><a class="link" href="./registration.php">Registration</a></p>
+            <p><a class="link" href="animations.php">Animations</a></p>
         </div>
         <br><br><br><br><br><br>
 
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 text-left">
             <br><br>
-            <div class="Main" >
+            <div class="Main">
                 <h1>Hello Welcome To My Page.</h1>
             </div>
         </div>

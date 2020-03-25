@@ -12,6 +12,11 @@
     text-shadow: 2px 2px black;
 }
 
+#birthday {
+    color: black;
+    font: 100% "Times New Roman";
+}
+
 .row-content {
     color: whitesmoke;
     font: 90% "Times New Roman";
