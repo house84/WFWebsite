@@ -19,7 +19,7 @@
 
 <body>
 <?php include 'PHP\registration.php'; ?>
-</body>
+
 
 <nav class="navbar-navbar-inverse">
     <div class="container-fluid">
@@ -213,13 +213,19 @@
 
                         <input type="submit" name="submit"
                                id="submitButton" class="btn btn-success" value="Submit Button">
-                        <input type="reset" class="btn btn-info" value="Reset Button">
+                        <input type="button" class="btn btn-info" value="Reset" name="reset"
+                        id="resetButton"
+                        onclick="window.location.href='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>'" />
+
                         <br><br><br>
                     </div>
                 </div>
             </div>
             <br><br><br><br><br>
         </form>
+        <script type="text/javascript">
+            document.getElementById('state').value = "<?php echo $_POST['state'];?>";
+        </script>
         <?php include 'PHP\insertVaLidData.php'; ?>
     </div>
 </div>

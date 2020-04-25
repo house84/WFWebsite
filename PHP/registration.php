@@ -7,6 +7,7 @@
         $email = $birthday = $phonenumber = $zip = $password = $verification = "";
     $isValid = false;
     $validCount = $check = 0;
+    $reset = "Reset";
 
     //Check for errors use:  echo"<script>alert($validCount);</script>";
 
