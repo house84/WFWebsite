@@ -9,7 +9,7 @@
 .navbar-brand {
     font: 100% "Tarzan";
     color: orangered;
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
 }
 
 #birthday {
@@ -20,13 +20,13 @@
 .row-content {
     color: whitesmoke;
     font: 90% "Times New Roman";
-    text-shadow: 2px 2px #222222;
+    text-shadow: 1px 1px #222222;
 }
 
 .link {
     color: orangered;
     font: 150% "Times New Roman";
-    text-shadow: 2px 2px #222222;
+    text-shadow: 1px 1px #222222;
 }
 
 body {
@@ -40,4 +40,8 @@ footer{
     padding: 15px;
     height: auto;
     margin-top: 0;
+}
+
+.error {
+    color: #FF0000;
 }
