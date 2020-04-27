@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include 'PHP\connectioninfo.php'; ?>
+<?php include 'PHP\connectionInfo.php'; ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,8 +19,6 @@
 
 <body>
 <?php 'PHP\selectUserData.php'; ?>
-
-
 <nav class="navbar-navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -28,7 +26,6 @@
         </div>
     </div>
 </nav>
-
 <div class="container-fluid text-left">
     <div class="row-content">
         <br><br><br>
@@ -43,55 +40,49 @@
 
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 text-left">
                 <br><br>
+                <h1>Confirmation Page</h1>
+                <br>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div id="UserDiv" class="form-group">
                             <label for="username">Username:</label>
                             <input disabled  id="username" name="username" class="form-control"
                                    type="text" placeholder="Username" value="<?php echo $username; ?>"/>
-                            <span id="UserErr" class="error"> <?php echo $usernameErr;?> </span>
                         </div>
                         <div id="passDiv" class="form-group">
-                            <label for="password">Password:</label>
-                            <input disabled  type="password" id="password" class="form-control" name="password"
-                                   placeholder="Password" value="<?php echo $password; ?>"/>
-                            <span id="passErr" class="error"> <?php echo $passwordErr;?> </span>
+                            <label for="pword">Password:</label>
+                            <input disabled  type="password" id="pword" class="form-control" name="pword"
+                                   placeholder="Password" value="<?php echo $pword; ?>"/>
                         </div>
                         <div id="verPassDiv" class="form-group">
                             <label for="verification">Verify Password:</label>
                             <input disabled  type="password" id="verification" class="form-control" name="verification"
                                    placeholder="Verify Password" value="<?php echo $verification; ?>"/>
-                            <span id="verPassErr" class="error"><?php echo $verificationErr;?></span>
                         </div>
                         <div class="form-group" id="FirstDiv">
                             <label for="firstname">First Name:</label>
                             <input disabled  id="firstname" name="firstname" class="form-control"
                                    type="text" placeholder="First" value="<?php echo $firstname; ?>" >
-                            <span id="FirstErr" class="error"> <?php echo $firstnameErr;?> </span>
                         </div>
                         <div class="form-group" id="LastDiv">
                             <label for="lastname">Last Name:</label>
                             <input disabled  id="lastname" name="lastname" class="form-control"
                                    type="text" placeholder="Last" value="<?php echo $lastname; ?>" >
-                            <span id="LastErr" class="error"> <?php echo $lastnameErr;?> </span>
                         </div>
                         <div class="form-group" id="Add1Div">
                             <label for="address1">Address Line 1:</label>
                             <input disabled  id="address1" name="address1" class="form-control"
                                    type="text" placeholder="Address" value="<?php echo $address1; ?>">
-                            <span id="Add1Err" class="error"> <?php echo $address1Err;?> </span>
                         </div>
                         <div class="form-group" id="Add2Div">
                             <label for="address2">Address Line 2:</label>
                             <input disabled  id="address2" name="address2" class="form-control"
                                    type="text" placeholder="Address Line 2 (Optional)" value="<?php echo $address2;?>" >
-                            <span id="Add2Err" class="error"> <?php echo $address2Err;?> </span>
                         </div>
                         <div class="form-group" id="CityDiv">
                             <label for="city">City:</label>
                             <input disabled  id="city" name="city" class="form-control"
                                    type="text" placeholder="City" value="<?php echo $city;?>" >
-                            <span id="CityErr" class="error"> <?php echo $cityErr;?> </span>
                         </div>
                     </div>
                     <!-- <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3 center-block">
@@ -158,26 +149,22 @@
                                 <option value="AP">Armed Forces Pacific</option>
                                 <option value="AE">Armed Forces Others</option>
                             </select>
-                            <span id="StateErr" class="error"> <?php echo $stateErr;?> </span>
                         </div>
                         <div class="form-group" id="ZipDiv">
                             <label for="zip">Zip Code:</label>
                             <input disabled  id="zip" name="zip" class="form-control"
                                    type="text" placeholder="Zip Code" value="<?php echo $zip;?>"/>
-                            <span id="ZipErr" class="error"> <?php echo $zipErr;?> </span>
                         </div>
                         <div class="form-group" id="PhoneDiv">
                             <label for="phonenumber">Phone Number:</label>
                             <input disabled  id="phonenumber" name="phonenumber" class="form-control"
                                    type="text" placeholder="###-###-####" value="<?php echo $phonenumber;?>"/>
-                            <span id="PhoneErr" class="error"> <?php echo $phonenumberErr;?> </span>
                         </div>
 
                         <div class="form-group" id="EmailDiv">
                             <label for="email">Email:</label>
                             <input disabled  id="email" type="email" class="form-control"
                                    placeholder="Email" name="email" value="<?php echo $email;?>" />
-                            <span id="EmailErr" class="error"> <?php echo $emailErr;?> </span>
                         </div>
 
                         <div class="form-group">
@@ -193,7 +180,6 @@
                                    name="gender" id="otherGender"
                                 <?php if ($gender=="otherGender") {echo "checked";}?>
                                    value="other"/> <label for="otherGender">Other</label>
-                            <span id="GenderErr" class="error"> <br/> <?php echo $genderErr;?> </span>
                         </div>
                         <div class="form-group">
                             <label for="marital" id="marital">Marital Status:</label><br>
@@ -203,12 +189,10 @@
                             <input disabled  type="radio" name="marital" id="notMarried"
                                 <?php if ($marital=="notMarried") {echo "checked";}?>
                                    value="notMarried"/> <label for="notMarried">Not Married</label><br>
-                            <span id="GenderErr" class="error"> <?php echo $maritalErr;?> </span>
                         </div>
                         <div class="form-group">
                             <label for="birthday">Date of Birth:</label>
                             <input disabled type="date" name="birthday" id="birthday" value="<?php echo $birthday;?>">
-                            <span id="BirthdayErr" class="error"> <br/> <?php echo $birthdayErr;?> </span>
                         </div>
 
                        <br><br><br>

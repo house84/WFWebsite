@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<?php include 'PHP\connectioninfo.php'; ?>
+<?php include 'PHP\connectionInfo.php'; ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Project 1</title>
+    <script src="./js/validation.js"></script>
+    <script src="./js/phoneformat.js"></script>
     <link href="./css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="./css/animation.css" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -14,11 +16,12 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+
     <meta name="viewport" content="width-device-width, initial-scale=1">
 </head>
 
 <body>
-<?php include 'PHP\registration.php'; ?>
+<?php include 'PHP\validation.php'; ?>
 
 
 <nav class="navbar-navbar-inverse">
@@ -48,49 +51,70 @@
                         <div id="UserDiv" class="form-group">
                             <label for="username">Username:</label>
                             <input id="username" name="username" class="form-control"
+                                   required="true" minlength="6" maxlength="50"
+                                   onblur="checkUsername(this);"
                                    type="text" placeholder="Username" value="<?php echo $username; ?>"/>
-                            <span id="UserErr" class="error"> <?php echo $usernameErr;?> </span>
+                            <span id="UserErr" class="help-block hide">Username must be between 6
+                        and 50 characters long.</span>
+                            <span id="FirstErr" class="error"> <?php echo $usernameErr;?> </span>
                         </div>
                         <div id="passDiv" class="form-group">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" class="form-control" name="password"
-                                   placeholder="Password" value="<?php echo $password; ?>"/>
+                            <label for="pword">Password:</label>
+                            <input type="password" id="pword" class="form-control" name="pword"
+                                   placeholder="Password" minlength="8" maxlength="50" onblur="passwordFormat(this);"
+                                   required="true" value="<?php echo $pword; ?>"/>
+                            <span id="passErr" class="help-block hide">Password Must be at minimum 8
+                         characters long and contain at least 1 capital, 1 lowercase
+                            1 number and 1 special character</span>
                             <span id="passErr" class="error"> <?php echo $passwordErr;?> </span>
                         </div>
                         <div id="verPassDiv" class="form-group">
                             <label for="verification">Verify Password:</label>
                             <input type="password" id="verification" class="form-control" name="verification"
-                                   placeholder="Verify Password" value="<?php echo $verification; ?>"/>
-                            <span id="verPassErr" class="error"><?php echo $verificationErr;?></span>
+                                   placeholder="Verify Password" required="true" minlength="8" maxlength="50"
+                                   maxlength="50" onblur="passwordMatch(this);" value="<?php echo $verification; ?>"/>
+                            <span id="verPassErr" class="help-block hide">Your passwords do not match,
+                        please try again.</span>
+                            <span id="passErr" class="error"> <?php echo $verificationErr;?> </span>
                         </div>
                         <div class="form-group" id="FirstDiv">
                             <label for="firstname">First Name:</label>
-                            <input id="firstname" name="firstname" class="form-control"
-                                   type="text" placeholder="First" value="<?php echo $firstname; ?>" >
+                            <input id="firstname" name="firstname" class="form-control" maxlength="50"
+                                   type="text" required="true" onblur="checkFirst(this);"
+                                   placeholder="First" value="<?php echo $firstname;?>">
+                            <span id="FirstErr" class="help-block hide">Input First Name </span>
                             <span id="FirstErr" class="error"> <?php echo $firstnameErr;?> </span>
                         </div>
                         <div class="form-group" id="LastDiv">
                             <label for="lastname">Last Name:</label>
-                            <input id="lastname" name="lastname" class="form-control"
-                                   type="text" placeholder="Last" value="<?php echo $lastname; ?>" >
+                            <input id="lastname" name="lastname" class="form-control" maxlength="50"
+                                   type="text" placeholder="Last" required="true" onblur="checkLast(this);"
+                                   value="<?php echo $lastname; ?>" >
+                            <span id="LastErr" class="help-block hide">Input Last Name </span>
                             <span id="LastErr" class="error"> <?php echo $lastnameErr;?> </span>
                         </div>
                         <div class="form-group" id="Add1Div">
                             <label for="address1">Address Line 1:</label>
-                            <input id="address1" name="address1" class="form-control"
-                                   type="text" placeholder="Address" value="<?php echo $address1; ?>">
+                            <input id="address1" name="address1" class="form-control" maxlength="100"
+                                   type="text" placeholder="Address" required="true" onblur="checkAddress1(this);"
+                                   value="<?php echo $address1; ?>">
+                            <span id="Add1Err" class="help-block hide">Enter Address</span>
                             <span id="Add1Err" class="error"> <?php echo $address1Err;?> </span>
                         </div>
                         <div class="form-group" id="Add2Div">
                             <label for="address2">Address Line 2:</label>
-                            <input id="address2" name="address2" class="form-control"
-                                   type="text" placeholder="Address Line 2 (Optional)" value="<?php echo $address2;?>" >
+                            <input id="address2" name="address2" class="form-control" maxlength="100"
+                                   type="text" placeholder="Address Line 2 (Optional)"
+                                   onblur="checkAddress2(this);"  value="<?php echo $address2;?>" >
+                            <span id="Add2Err" class="help-block hide">Must be fewer than 100 Characters. </span>
                             <span id="Add2Err" class="error"> <?php echo $address2Err;?> </span>
                         </div>
                         <div class="form-group" id="CityDiv">
                             <label for="city">City:</label>
-                            <input id="city" name="city" class="form-control"
-                                   type="text" placeholder="City" value="<?php echo $city;?>" >
+                            <input id="city" name="city" class="form-control" maxlength="50"
+                                   type="text" placeholder="City" required="true" onblur="checkCity(this);"
+                                   value="<?php echo $city;?>" >
+                            <span id="CityErr" class="help-block hide">Enter City Name</span>
                             <span id="CityErr" class="error"> <?php echo $cityErr;?> </span>
                         </div>
                     </div>
@@ -101,6 +125,7 @@
                         <div class="form-group" id="StateDiv">
                             <label for="state">State:</label>
                             <select id="state" name="state" class="form-control"
+                                    required="true" onblur="checkState(this);"
                                 value="<?php echo $state;?>">
                                 <option value="">--Please Select--</option>
                                 <option value="AL">Alabama</option>
@@ -158,56 +183,59 @@
                                 <option value="AP">Armed Forces Pacific</option>
                                 <option value="AE">Armed Forces Others</option>
                             </select>
+                            <span id="StateErr" class="help-block hide">Select State</span>
                             <span id="StateErr" class="error"> <?php echo $stateErr;?> </span>
                         </div>
                         <div class="form-group" id="ZipDiv">
                             <label for="zip">Zip Code:</label>
-                            <input id="zip" name="zip" class="form-control"
-                                   type="text" placeholder="Zip Code" value="<?php echo $zip;?>"/>
+                            <input id="zip" name="zip" class="form-control" required="true"
+                                   minlength="5" maxlength="10" type="text" placeholder="Zip Code"
+                                   onblur="checkZip(this);" value="<?php echo $zip;?>"/>
+                            <span id="ZipErr" class="help-block hide">Enter Valid Zip Code</span>
                             <span id="ZipErr" class="error"> <?php echo $zipErr;?> </span>
                         </div>
                         <div class="form-group" id="PhoneDiv">
                             <label for="phonenumber">Phone Number:</label>
-                            <input id="phonenumber" name="phonenumber" class="form-control"
-                                   type="text" placeholder="###-###-####" value="<?php echo $phonenumber;?>"/>
+                            <input id="phonenumber" name="phonenumber" class="form-control" required="true"
+                                   type="text" placeholder="###-###-####" maxlength="12"
+                                    value="<?php echo $phonenumber;?>"/>
                             <span id="PhoneErr" class="error"> <?php echo $phonenumberErr;?> </span>
                         </div>
-
                         <div class="form-group" id="EmailDiv">
                             <label for="email">Email:</label>
-                            <input id="email" type="email" class="form-control"
-                                   placeholder="Email" name="email" value="<?php echo $email;?>" />
+                            <input id="email" type="email" class="form-control" required="true"
+                                   placeholder="Email" name="email" onblur="checkEmail(this);"
+                                   maxlength="50" value="<?php echo $email;?>" />
+                            <span id="EmailErr" class="help-block hide">Enter Valid Email</span>
                             <span id="EmailErr" class="error"> <?php echo $emailErr;?> </span>
                         </div>
-
                         <div class="form-group">
                             <label for="gender" id="gender">Gender:</label><br>
                             <input type="radio" required="true" name="gender" id="maleGender"
                                 <?php if ($gender=="maleGender") {echo "checked";}?>
                                    value="male"/> <label for="maleGender">Male</label><br>
-                            <input type="radio"
-                                   name="gender" id="femaleGender"
+                            <input type="radio" required="true" name="gender" id="femaleGender"
                                 <?php if ($gender=="femaleGender") {echo "checked";}?>
                                    value="female"/> <label for="femaleGender">Female</label><br>
-                            <input type="radio"
-                                   name="gender" id="otherGender"
+                            <input type="radio" required="true" name="gender" id="otherGender"
                                 <?php if ($gender=="otherGender") {echo "checked";}?>
-                                   value="other"/> <label for="otherGender">Other</label>
-                            <span id="GenderErr" class="error"> <br/> <?php echo $genderErr;?> </span>
+                                   value="other"/> <label for="otherGender">Other</label><br>
+                            <span id="GenderErr" class="error"> <?php echo $genderErr;?> </span>
                         </div>
                         <div class="form-group">
                             <label for="marital" id="marital">Marital Status:</label><br>
                             <input type="radio" required="true" name="marital" id="married"
                                 <?php if ($marital=="married") {echo "checked";}?>
                                    value="married"/> <label for="married">Married</label><br>
-                            <input type="radio" name="marital" id="notMarried"
+                            <input type="radio" required="true" name="marital" id="notMarried"
                                 <?php if ($marital=="notMarried") {echo "checked";}?>
                                    value="notMarried"/> <label for="notMarried">Not Married</label><br>
-                            <span id="GenderErr" class="error"> <?php echo $maritalErr;?> </span>
+                            <span id="MaritalErr" class="error"> <?php echo $maritalErr;?> </span>
                         </div>
                         <div class="form-group">
                             <label for="birthday">Date of Birth:</label>
-                            <input type="date" name="birthday" id="birthday" value="<?php echo $birthday;?>">
+                            <input type="date" name="birthday" id="birthday"
+                                   required="true" value="<?php echo $birthday;?>">
                             <span id="BirthdayErr" class="error"> <br/> <?php echo $birthdayErr;?> </span>
                         </div>
 
@@ -226,7 +254,7 @@
         <script type="text/javascript">
             document.getElementById('state').value = "<?php echo $_POST['state'];?>";
         </script>
-        <?php include 'PHP\insertVaLidData.php'; ?>
+        <?php include 'PHP\insertValidData.php'; ?>
     </div>
 </div>
 <br><br><br><br>

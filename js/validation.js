@@ -1,15 +1,13 @@
 function registerHandlers() {
-    //document.getElementById("password").onblur = passwordFormat;
-   // document.getElementById("verification").onblur = passwordMatch;
     document.getElementById("myForm").onsubmit = validate;
 }
 
 function passwordFormat() {
 
-    var init = document.getElementById("password");
-    var password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,50}$/;
+    var init = document.getElementById("pword");
+    var pword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,50}$/;
 
-    if (init.value != init.value.match(password)) {
+    if (init.value != init.value.match(pword)) {
         var initDiv = document.getElementById("passDiv");
         if (initDiv) {
             initDiv.classList.add("has-error");
@@ -30,7 +28,7 @@ function passwordFormat() {
         return false;
     }
 
-    if (init.value.match(password)) {
+    if (init.value.match(pword)) {
 
         var initDiv = document.getElementById("passDiv");
         if (initDiv) {
@@ -56,9 +54,9 @@ function passwordFormat() {
 //Verify Password Matches Original Password
 function passwordMatch() {
 
-    var init = document.getElementById("password");
+    var init = document.getElementById("pword");
     var sec = document.getElementById("verification");
-    var password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,50}$/;
+    var pword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,50}$/;
 
     if (init.value != sec.value) {
 
@@ -82,7 +80,7 @@ function passwordMatch() {
         return false;
     }
 
-    if (init.value == init.value.match(password)) {
+    if (init.value == init.value.match(pword)) {
 
         var secDiv = document.getElementById("verPassDiv");
         if (secDiv) {

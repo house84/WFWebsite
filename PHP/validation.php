@@ -1,12 +1,15 @@
 <?php
     //define variables
     $firstnameErr = $usernameErr = $lastnameErr = $address1Err = $address2Err = $cityErr = $stateErr =
-        $genderErr = $maritalErr = $emailErr = $birthdayErr = $phonenumberErr =  $zipErr = $passwordErr =
-            $verificationErr = "";
+    $genderErr = $maritalErr = $emailErr = $birthdayErr = $phonenumberErr =  $zipErr = $passwordErr = $verificationErr = "";
+
     $firstname = $username = $lastname = $address1 = $address2 = $city = $state = $gender = $marital =
-        $email = $birthday = $phonenumber = $zip = $password = $verification = "";
+    $email = $birthday = $phonenumber = $zip = $pword = $verification = "";
+
     $isValid = false;
+
     $validCount = $check = 0;
+
     $reset = "Reset";
 
     //Check for errors use:  echo"<script>alert($validCount);</script>";
@@ -31,12 +34,12 @@
             $check = 0;
         }
 
-        $password = trim($_POST["password"]);
-        if (empty($password)) {
+        $pword = trim($_POST["pword"]);
+        if (empty($pword)) {
             $passwordErr = "Password is Required";
             $check = 1;
         } else {
-            if (!preg_match('/^(?=.*[0-9]+.*)(?=.*[a-z]+.*)(?=.*[A-Z])(?=.*[!@#$%^&*]+.*)[0-9a-zA-Z!@#$%&*]{8,50}$/', $password)) {
+            if (!preg_match('/^(?=.*[0-9]+.*)(?=.*[a-z]+.*)(?=.*[A-Z])(?=.*[!@#$%^&*]+.*)[0-9a-zA-Z!@#$%&*]{8,50}$/', $pword)) {
                 $passwordErr = "Password must be at least 8 characters long, and contain 1 capital, 1 lowercase, 1 digit, 1 special character";
                 $check = 1;
             }
@@ -52,8 +55,8 @@
             $verificationErr = "Must confirm password";
             $check = 1;
         } else {
-            $check = trim($_POST["password"]);
-            if ($verification != $password) {
+            $check = trim($_POST["pword"]);
+            if ($verification != $pword) {
                 $verificationErr = "Passwords do not match";
                 $check = 1;
             }
@@ -240,7 +243,7 @@
         if ($validCount == 15) {
             $isValid = true;
         } else {
-            echo "<script>alert('Fill out all required fields');</script>";
+            //echo "<script>alert('Fill out all required fields');</script>";
         }
     }
 
